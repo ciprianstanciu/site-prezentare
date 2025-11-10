@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciprian Stanciu – Acordeonist din Pitești</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    header {
+      background: linear-gradient(to bottom right, #d90429, #2b2d42);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.2rem; }
+    .btn-main {
+      background-color: #ef233c;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .btn-main:hover {
+      background-color: #d90429;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 60px 0;
+      opacity: 0;
+      animation: fadeIn 1.2s forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.9s; }
+    section:nth-of-type(5) { animation-delay: 1.2s; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #ef233c;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Ciprian Stanciu</h1>
+    <p>Acordeonist & Pasionat de muzica si calculatoare</p>
+    <a href="#muzica" class="btn btn-main mt-3">🎵 Ascultă-mă</a>
+  </header>
+
+  <!-- Despre mine -->
+  <section id="despre" class="container text-center">
+    <h2 class="mb-4">Despre mine</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>Sunt un tânăr acordeonist din Pitești, pasionat de muzică încă din copilărie. Atracția mea pentru sunetul acordeonului m-a inspirat să explorez atât muzica populară, cât și cea modernă. Îmi doresc să păstrez vii tradițiile prin interpretările mele și să aduc o notă personală muzicii contemporane, aducând totodată bucurie și zâmbete celor care mă ascultă.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/img1.jpg" alt="Poză artist" class="img-fluid rounded shadow" style="max-width:300px;">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Muzica mea -->
+  <section id="muzica" class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Muzica mea</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <iframe width="100%" height="215" 
+  src="https://www.youtube.com/embed/XvPPglXRxMc?si=WOFNGzfwiZyvaSYq" 
+  title="Cântec popular" frameborder="0" allowfullscreen>
+</iframe>
+
+        </div>
+        <div class="col-md-4">
+          <iframe width="100%" height="215" src="https://youtube.com/embed/5OYqEiFjtcs?si=-D2hNzPmIkhYG-96" title="Mi-a placut spritul si viata" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+          <iframe width="100%" height="215" src="https://youtube.com/embed/xP6eaXggxkg?si=1RRULvQOxHStLbsd" title="Melodie in stil bulgaresc" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!-- Galerie -->
+  <section id="galerie" class="container text-center">
+    <h2 class="mb-4">Galerie foto</h2>
+    <div class="row gallery">
+      <div class="col-md-4"><img src="images/img2.jpg" alt="Poză 1"></div>
+      <div class="col-md-4"><img src="images/img4.jpg" alt="Poză 2"></div>
+      <div class="col-md-4"><img src="images/img3.jpg" alt="Poză 3"></div>
+    </div>
+  </section>
+
+
+<section id="studio" class="container text-center py-5">
+  <h2 class="mb-4">Turul studio-ului meu</h2>
+  <p class="mb-4">Vă invit să vedeți home studio-ul meu, unde creez și înregistrez muzică.</p>
+  <a href="https://www.tiktok.com/@ciprian0530/video/7516894728441416982" target="_blank">📷Click Aici</a>
+
+
+</section>
+
+
+
+<section id="contact" class="bg-light text-center py-5">
+  <div class="container">
+    <h2 class="mb-4">Contact</h2>
+    <p>📧 <a href="mailto:stanciuciprian0530@gmail.com">stanciuciprian0530@gmail.com</a></p>
+<p>
+  <a href="https://www.instagram.com/ciprian0530" target="_blank">📷 Instagram</a> | 
+  <a href="https://www.youtube.com/@ciprian0530" target="_blank">🎥 YouTube</a> | 
+  <a href="https://www.linkedin.com/in/ciprian53/" target="_blank">💼 LinkedIn</a> | 
+  <a href="https://www.tiktok.com/@ciprian0530" target="_blank">🎵 TikTok</a>
+</p>
+
+    <hr class="my-4">
+    <p>Dacă doriți să înregistrați piese, să luați lecții de acordeon online sau fizic, sau doar să schimbăm câteva idei muzicale, <strong>contactați-mă!</strong></p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ciprian Stanciu | Toate drepturile rezervate</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
